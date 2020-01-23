@@ -1,0 +1,25 @@
+[{
+    "id": 1,
+    "name": "Luis Litt",
+    "img": "img/profile.png",
+    "status": "available",
+    "lastMessage": "Lorem ipsum dolor sit ..."
+}, {
+    "id": 2,
+    "name": "Luis Litt",
+    "img": "img/profile.png",
+    "status": "not-available",
+    "lastMessage": "Lorem ipsum dolor sit ..."
+}, {
+    "id": 3,
+    "name": "Luis Litt",
+    "img": "img/profile.png",
+    "status": "offline",
+    "lastMessage": "Lorem ipsum dolor sit ..."
+}, {
+    "id": 4,
+    "name": "Luis Litt",
+    "img": "img/profile.png",
+    "status": "busy",
+    "lastMessage": "Lorem ipsum dolor sit ..."
+}]

@@ -1,0 +1,21 @@
+[{
+    "message": "Lorem  amet",
+    "img": "img/profile.png",
+    "received": true
+}, {
+    "message": "Lorem ipet",
+    "img": "img/profile.png",
+    "received": false
+}, {
+    "message": "whhas",
+    "img": "img/profile.png",
+    "received": false
+}, {
+    "message": "asfdafqw",
+    "img": "img/profile.png",
+    "received": true
+}, {
+    "message": "asfsdsq",
+    "img": "img/profile.png",
+    "received": true
+}]

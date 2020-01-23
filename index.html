@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="no-scroll">
+    <div class="loading-spinner">
+        <img src="img/spinner.svg">
+    </div>
+    <div class="container chat-container">
+        <div class="row">
+            <div class="col-2 col-md-4 chats">
+                <div class="profile-container">
+                    <div class="profile">
+                        <img class="img img--rounded profile-pic status-bordered status--rounded status-bordered--available"
+                            src="img/profile.png">
+                        <span class="username d-none d-md-block">Mike Ross</span>
+                    </div>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" class="search-input d-none d-md-block" placeholder="Search contacts...">
+                </div>
+                <div class="users">
+                    <!-- <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--available"></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username d-none d-md-block">Louis Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--not-available"></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username">Lois Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--offline"></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username">Lois Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--busy "></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username">Lois Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--available"></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username">Lois Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--available"></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username">Lois Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--available"></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username">Lois Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--available"></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username">Lois Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <div class="user-pic-container">
+                            <div class="status status--small status--rounded status--available"></div>
+                            <img class="img img--rounded user-pic" src="img/profile.png">
+                        </div>
+                        <div class="texts d-none d-md-block">
+                            <p class="username">Lois Litt</p>
+                            <p class="last-message">Lorem ipsum dolor sit ...</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-action"><i class="fa fa-user-plus" aria-hidden="true"></i><span
+                            class="d-none d-md-inline">Add contact</span></button>
+                    <button class="btn btn-action"><i class="fa fa-cog" aria-hidden="true"></i><span
+                            class="d-none d-md-inline">Settings</span></button>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 chat-history">
+                <div class="chat-header">
+                    <div class="profile">
+                        <img class="img img--rounded profile-pic" src="img/profile.png">
+                        <span class="username">Mike Ross</span>
+                    </div>
+
+                    <div class="social">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="messages">
+                    <!-- <div class="message">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div class="message message--received">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div>
+                    <div class="message">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div>
+                    <div class="message message--received">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div>
+                    <div class="message message--received">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div>
+                    <div class="message message--received">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div>
+
+                    <div class="message">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div>
+                    <div class="message">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div>
+                    <div class="message">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div>
+                    <div class="message">
+                        <img class="img img--rounded message-pic" src="img/profile.png">
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem maiores
+                            molestias adipisci veniam quis accusamus modi. Quis eos quasi iure nostrum itaque odio
+                            dolore atque doloremque, voluptatem magni impedit?</p>
+                    </div> -->
+                </div>
+
+                <div class="send-container">
+                    <input type="text" class="send-input" placeholder="Write your message..."><button
+                        class="btn btn-attachment"><i class="fa fa-paperclip" aria-hidden="true"></i></button><button
+                        class="btn btn-send"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/chat.js"></script>
+</body>
+
+</html>
